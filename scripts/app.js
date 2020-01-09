@@ -12,6 +12,8 @@ stop.disabled = true;
 
 // visualiser setup - create web audio api context and canvas
 
+var AudioContext = window.AudioContext || window.webkitAudioContext
+
 let audioCtx;
 const canvasCtx = canvas.getContext("2d");
 
